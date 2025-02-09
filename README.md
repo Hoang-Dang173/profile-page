@@ -9,7 +9,7 @@ Within this repository, there are:
   + styles.css contains the style design for the html site.
   + src.js contains javascript code implementing the logic of the site.
 
-My idea is that I try to develop a single page site where user hits next or prev to read more information about me (this ends up being like Powerpoint slides :D). The images of the face with universe inside implies an internal world and so tries to convey the theme of the world around me (the inside world) or you can intepret the symbols whatever you like :). I hope you find it both informative and enjoyable!
+My idea is that I try to develop a single page site where the user hits next or prev to read more information about me (this ends up being like Powerpoint slides :D). The images of the face with universe inside implies an internal world and so tries to convey the theme of the world around me (the inside world) or you can intepret the symbols whatever you like :). I hope you find it both informative and enjoyable!
 
 **Side note:**
 This site is developed to a certain level of completion but it is, of course, not developed to perfection yet. There are still features that can be made better, such as annimation, backgrounds, colors, etc. As this is my first ever html project, please excuse me for that (and things will hopefully improve in the future). 
