@@ -1,7 +1,7 @@
 # Personal Profile
 
 This is the repository of my personal profile. 
-The site is built using html, javascript and css. 
+The profile page is built using html, javascript and css. 
 Within this repository, there are:
 
   + a folder 'images' which contains all the images used.
