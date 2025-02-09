@@ -6,14 +6,17 @@
         $('.container').hide();
     
         counter++;
-        $('#content-'+counter+'').show();
+        if (counter <= 9) {
+            $('#content-'+counter+'').show();
+        }
         
         if(counter > 1) {
             $('.prev').show();
         };
         setStyle(counter); 
-        if(counter > 9) {
-            counter--; 
+        if(counter == 10) {
+            $('.next').hide(); 
+            $('#end').show(); 
         };
         
     });
@@ -26,6 +29,10 @@
         $('#content-'+id).show();
         
         setStyle(counter); 
+
+        if(counter <= 9) {
+            $('.next').show();
+        };
 
         if(counter ==  1){
             $('.prev').hide();
@@ -86,14 +93,21 @@
             document.body.style.backgroundAttachment = "fixed";
         }
         else if (counter == 8) {
-            document.body.style.backgroundImage = "url('Images/project_face.png'), url('Images/recursive1.jpg')";
+            document.body.style.backgroundImage = "url('Images/project_cry.png'), url('Images/recursive1.jpg')";
+            document.body.style.backgroundRepeat = "no-repeat, repeat";
+            document.body.style.backgroundPosition = " 370px 0px";
+            document.body.style.backgroundSize = "900px 700px, auto";
+            document.body.style.backgroundAttachment = "fixed";
+        }
+        else if (counter == 9) {
+            document.body.style.backgroundImage = "url('Images/links_face.png'), url('Images/recursive1.jpg')";
             document.body.style.backgroundRepeat = "no-repeat, repeat";
             document.body.style.backgroundPosition = " 370px 0px";
             document.body.style.backgroundSize = "900px 700px, auto";
             document.body.style.backgroundAttachment = "fixed";
         }
         else {
-            document.body.style.backgroundImage = "url('Images/links_face.png'), url('Images/recursive1.jpg')";
+            document.body.style.backgroundImage = "url('Images/bye_face.png'), url('Images/recursive1.jpg')";
             document.body.style.backgroundRepeat = "no-repeat, repeat";
             document.body.style.backgroundPosition = " 370px 0px";
             document.body.style.backgroundSize = "900px 700px, auto";
