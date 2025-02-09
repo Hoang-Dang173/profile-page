@@ -17,3 +17,8 @@ Also, another note around this site is that it should be used on a computer/desk
 
 Finally, as you may have already deduced, the link to the hosted site is: 
 https://hoang-dang173.github.io/profile-page/ 
+
+The screenshot below illustrates a part of it and how it is expected to look like:
+![image](https://github.com/user-attachments/assets/9d9ebe02-8066-4f5b-b096-aef38737e40b)
+
+Let me know if there are any other problems!!!
