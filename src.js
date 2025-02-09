@@ -1,89 +1,106 @@
 
-var no_box = document 
-        .querySelector('.no-box'); 
-          
-    var i = 1; 
-    var heading = document.querySelector('.heading'); 
+
+    var counter = 1;
+    var face_link; 
+    $('body').on('click', '.next', function() { 
+        $('.container').hide();
     
-    function prev() { 
-      
-        // Start position  
-        if (i == 1) { 
-      
-            // Add disabled attribute on 
-            // prev button 
-            document.getElementsByClassName( 
-                    'prev').disabled = true; 
-      
-            // Remove disabled attribute  
-            // from next button  
-            document.getElementsByClassName( 
-                    'next').disabled = false; 
-        } else { 
-            i--; 
-            reset_animation()
-            return setNo(); 
-        } 
-    } 
-      
-    function next() { 
-      
-        // End position 
-        if (i == 5) { 
-      
-            // Add disabled attribute on  
-            // next button 
-            document.getElementsByClassName( 
-                    'next').disabled = true; 
-      
-            // Remove disabled attribute 
-            // from prev button 
-            document.getElementsByClassName( 
-                    'prev').disabled = false; 
-        } else { 
-            i++; 
-            reset_animation()
-            return setNo(); 
-        } 
-    } 
-      
-    function setNo() { 
-        if ( i === 1) {
-            document.body.style.backgroundImage = "url('Images/innerworld.png'), url('Images/recursive_tree.jpg')";
-            document.body.style.backgroundRepeat = "no-repeat, no-repeat";
-            document.body.style.backgroundPosition = "60% 10%, center";
-            document.body.style.backgroundSize = "900px 700px, 100% 200%";
+        counter++;
+        $('#content-'+counter+'').show();
+        
+        if(counter > 1) {
+            $('.prev').show();
+        };
+        setStyle(counter); 
+        if(counter > 9) {
+            counter--; 
+        };
+        
+    });
+    
+    $('body').on('click', '.prev', function() { 
+        //alert(counter);
+        counter--;
+        $('.container').hide();
+        var id = counter;    
+        $('#content-'+id).show();
+        
+        setStyle(counter); 
 
-            heading.innerHTML = "Greetings!";
-            return no_box.innerHTML = "I am Hoang. Welcome to my world!\n"; 
+        if(counter ==  1){
+            $('.prev').hide();
         }
-        else if (i === 2) {
-            document.body.style.backgroundImage = "url('Images/innerworld.png'), url('Images/recursive1.jpg')";
-            document.body.style.backgroundRepeat = "no-repeat, repeat";
-            document.body.style.backgroundPosition = "60% 10%";
-            document.body.style.backgroundSize = "900px 700px, auto";
-            
-            heading.innerHTML = "Interest & Hobbies"; 
-             
-            return no_box.innerHTML = "My hobbies include playing chess, solving challenging \n mathematical problems (I am" +
-            "slightly maschochist, as the dissected face suggest LOL), and playing video games \n\n\n"; 
-        }
-        // Change innerhtml 
-       
-    } 
-
-
-    $('button').click(function(){
-        // restart animation
-        var me = no_box;
-        me.style.Animation = 'none';
-        setTimeout(function() {
-            me.style.Animation = '';
-        }, 10);
+    });
+    
+    $('body').on('click', '.edit-previous', function() { 
+        $('.end').hide();
+        $('.content-holder').show();
+        $('#content-3').show();
     });
 
-    function reset_animation() {
-        no_box.style.animation = 'none';
-        no_box.offsetHeight; /* trigger reflow */
-        no_box.style.animation = null; 
+
+
+
+    function setStyle (counter) {
+        if (counter == 1) {
+            document.body.style.backgroundImage = "url('Images/greeting_face.png'), url('Images/star_pattern.jpg')";
+            document.body.style.backgroundRepeat = "no-repeat, repeat";
+            document.body.style.backgroundPosition = "370px 0px, center";
+            document.body.style.backgroundSize = "900px 700px, auto";
+            document.body.style.backgroundAttachment = "fixed";
+
+        }
+        else if (counter == 2) {
+            document.body.style.backgroundImage = "url('Images/about.png'), url('Images/star_pattern.jpg')";
+            document.body.style.backgroundRepeat = "no-repeat, repeat";
+            document.body.style.backgroundPosition = "370px 0px, center";
+            document.body.style.backgroundSize = "900px 700px, auto";
+            document.body.style.backgroundAttachment = "fixed";
+        }
+        else if (counter == 3 || counter == 4) {
+            document.body.style.backgroundImage = "url('Images/about.png'), url('Images/hobbies.jpg')";
+            document.body.style.backgroundRepeat = "no-repeat, repeat";
+            document.body.style.backgroundPosition = "370px 0px, fixed";
+            document.body.style.backgroundSize = "900px 700px";
+            document.body.style.backgroundAttachment = "fixed";
+        }
+        else if ( counter == 5) {
+            document.body.style.backgroundImage = "url('Images/h_i_face.png'), url('Images/hobbies.jpg')";
+            document.body.style.backgroundRepeat = "no-repeat, repeat";
+            document.body.style.backgroundPosition = " 370px 0px, fixed";
+            document.body.style.backgroundSize = "900px 700px";
+            document.body.style.backgroundAttachment = "fixed";
+        }
+        else if (counter == 6) {
+            document.body.style.backgroundImage = "url('Images/h_i_face.png'), url('Images/math_back.jpg')";
+            document.body.style.backgroundRepeat = "no-repeat, repeat";
+            document.body.style.backgroundPosition = " 370px 0px";
+            document.body.style.backgroundSize = "900px 700px, cover";
+            document.body.style.backgroundAttachment = "fixed";
+        }
+        else if (counter == 7) {
+            document.body.style.backgroundImage = "url('Images/project_face.png'), url('Images/math_back.jpg')";
+            document.body.style.backgroundRepeat = "no-repeat, repeat";
+            document.body.style.backgroundPosition = " 370px 0px";
+            document.body.style.backgroundSize = "900px 700px, cover";
+            document.body.style.backgroundAttachment = "fixed";
+        }
+        else if (counter == 8) {
+            document.body.style.backgroundImage = "url('Images/project_face.png'), url('Images/recursive1.jpg')";
+            document.body.style.backgroundRepeat = "no-repeat, repeat";
+            document.body.style.backgroundPosition = " 370px 0px";
+            document.body.style.backgroundSize = "900px 700px, auto";
+            document.body.style.backgroundAttachment = "fixed";
+        }
+        else {
+            document.body.style.backgroundImage = "url('Images/links_face.png'), url('Images/recursive1.jpg')";
+            document.body.style.backgroundRepeat = "no-repeat, repeat";
+            document.body.style.backgroundPosition = " 370px 0px";
+            document.body.style.backgroundSize = "900px 700px, auto";
+            document.body.style.backgroundAttachment = "fixed";
+        }
+
+       
+
     }
+

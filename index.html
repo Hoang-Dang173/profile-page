@@ -1,31 +1,114 @@
 
 
-
+ 
 <!DOCTYPE html> 
 <html lang="en"> 
 <head> 
     <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     
 </head>
 <body > 
-    <div class="container"> 
-        <h2 class = "heading"> Greetings! </h2>
-        <div class="no-box">
-            <span class="no"> 
-                Hi! I am Hoang. Welcome to my world! 
-            </span> 
-        </div> 
-  
-        <button class="btn" onclick="prev()"> 
-            prev 
-        </button> 
+    <div class="container" id = "content-1"  style="display: block;"> 
+        <p class="no-box" style = " text-align: center;">    
+            Hi! I am Hoang. Welcome to my world! </br>
+            <img src  = "Images/welcome.gif" style = "width:100px; height: 200px;">
 
-        <button class="btn" onclick="next()"> 
-            next 
-        </button> 
+        </p> 
+       
     </div>  
+
+    <div class="container" id = "content-2"> 
+        <p class="no-box">    
+            My name is Hoang Dang. I am currently in my second year of the Bachelor of Software Engineering at UNSW. 
+            The below is some other key facts about me: </br>
+            
+                - <span class = "emphasis"> Age: </span> 20 </br>
+                - <span class = "emphasis">Status: </span> International </br>
+                - <span class = "emphasis">Home country: </span> Vietnam </br>
+                - <span class = "emphasis">COMP courses taken: </span> Comp1511, Comp1521, Comp1531  </br>
+            
+        </p> 
+    </div>  
+
+    <div class="container" id = "content-3"> 
+        <p class="no-box">    
+            I am definitely an introverted person (I process a lot of monologue while talking). I am usually quiet and preserved in 
+            front of the crowds or strangers but very energetic and active at home especially during night time (nocturnal :D). 
+            I love studying and am always willing to learn more and more. So my world is usually around with learning and reading. </br> 
+            
+        </p> 
+    </div>  
+
+    <div class="container" id = "content-4"> 
+        <p class="no-box" style = "background-color: transparent;">    
+            <img src  = "Images/study.gif" style = "width: 210px; height: 280px;">
+        </p> 
+    </div> 
+
+    <div class="container" id = "content-5"> 
+        <p class="no-box">    
+            My hobbies include playing chess, reading fictions, and solving challenging  mathematical problems (I am
+            slightly masochistic, as the dissected face suggest LOL). I also enjoy cooking 
+            and playing the piano (not so when I was a kid). <br>
+        </p> 
+    </div>  
+
+    <div class="container" id = "content-6"> 
+        <p class="no-box">    
+            In mathematics, I am most interested in geometry and how to apply 
+            different techniques to solve geometric problems. In computer science, I am most curious about operating system. 
+        </p> 
+    </div>  
+
+
+    <div class="container" id = "content-7"> 
+        <p class="no-box">    
+             How many personal projects in computers science I have done before? It is the value of the following expression: </br> 
+             <img src  = "Images/math_expression.png" >
+        </p> 
+    </div> 
+
+
+    <div class="container" id = "content-8"> 
+        <p class="no-box">    
+            0.   </br>
+            I have done some personal projects in high school or some uni assignments as projects but no formal personal one before. 
+            So this personal profile is the first one. </br> 
+            <img src  = "Images/cry.gif" style = "width:200px; height: 150px" >
+
+        </p> 
+    </div> 
+
+
+    <div class="container" id = "content-9"> 
+        <p class="no-box" style ="font-size: 50px; text-align: center;">     
+            <a href = "https://www.facebook.com/profile.php?id=100010016581892"> 
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+        </br>
+            <a href = "https://github.com/Hoang-Dang173"> 
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+        </br>
+            <a href = "https://www.linkedin.com/in/hoang-d-22a003252/"> 
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            
+        </p> 
+    </div> 
+
+    <button type = "button" class = "prev"> 
+        prev 
+    </button> 
+
+    <button type = "button" class = "next"> 
+        next 
+    </button> 
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </body> 
 <script src="src.js"></script>
 </html> 
-
-
