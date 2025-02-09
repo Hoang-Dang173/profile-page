@@ -13,7 +13,7 @@ My idea is that I try to develop a single page site where the user hits next or 
 
 **Side note:**
 This site is developed to a certain level of completion but it is, of course, not developed to perfection yet. There are still features that can be made better, such as annimation, backgrounds, colors, etc. As this is my first ever html project, please excuse me for that (and things will hopefully improve in the future). 
-Also, another note around this site is that it should be used on a computer/desktop/laptop which has large enough screen to cover my images. (if the site is opened on a mobile phone, it is likely that the image and text are all totally shifted rightwards). Again, this is a problem and I will try to fix this soon.
+Also, another note around this site is that it should be used on a computer/desktop/laptop which has large enough screen to cover my images. (if the site is opened on a mobile phone or a small screen laptop, it is likely that the image and text are all totally shifted rightwards). Again, this is a problem and I will try to fix this soon.
 
 Finally, as you may have already deduced, the link to the hosted site is: 
 https://hoang-dang173.github.io/profile-page/ 
